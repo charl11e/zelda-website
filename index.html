@@ -8,8 +8,9 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--CSS-->
+    <!--CSS & Javascript-->
     <link href="css.css" rel="stylesheet">
+    <script src="map.js"></script>
     <!--Set Viewport and font-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -46,7 +47,7 @@
     <div class="container-fluid">
         <h1 id="C1">Zelda: Breath of the wild</h1>
         <p>The Legend of Zelda: Breath of the wild was a 2017 game released for the WiiU and Nintendo Switch. The game completely reimagined the Zelda franchise, introducing new mechanics and a fresh story (no spoilers are in this website).
-        However, the game also provided a perfect introduction to Zelda for people looking to get into the franchise.<br><span style="font-weight:bold">This website contains the following information about the game:</span>
+        However, the game also provided a perfect introduction to Zelda for people looking to get into the franchise.<br><br><span style="font-weight:bold">This website contains the following information about the game:</span>
             <br><a class="important" href="#C2">Gameplay</a>
             <br><a class="important" href="#C3">Map</a>
             <br><a class="important" href="#C4">Shrines</a>
@@ -63,6 +64,25 @@
     <!--MAP-->
     <div class="container-fluid">
         <h1 id="C3">Map</h1>
+        <div class="dropdown">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                Show Map
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Disabled</a></li>
+                <li><a class="dropdown-item" href="#">Basic</a></li>
+                <li><a class="dropdown-item" href="#">Interactive</a></li>
+            </ul>
+        </div>
+       
+        <div id="interactive-map">
+            <iframe class="map" src="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/" title="An interactive map of Breath of the Wild"></iframe>
+        </div>
+
+        <div id="basic-map">
+            <img src="/images/map.jpeg" alt="A basic map of Breath of the Wild">
+        </div>
+            
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
 
